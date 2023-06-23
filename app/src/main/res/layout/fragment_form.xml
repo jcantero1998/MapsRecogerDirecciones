@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.FormFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonCreate"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="-1dp"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/txtnombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="@string/fragment_form_txt_nombre" />
+
+            <EditText
+                android:id="@+id/etnombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtnombre"
+                android:layout_marginTop="10dp"
+                android:hint="@string/fragment_form_et_nombre" />
+
+            <TextView
+                android:id="@+id/txtdireccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etnombre"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="5dp"
+                android:text="@string/fragment_form_txt_direccion" />
+
+            <EditText
+                android:id="@+id/etdireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtdireccion"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/txtciudad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etdireccion"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="5dp"
+                android:text="@string/fragment_form_txt_ciudad" />
+
+            <EditText
+                android:id="@+id/etciudad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtciudad"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/txtcomunidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etciudad"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="5dp"
+                android:text="@string/fragment_form_txt_comunidad" />
+
+            <EditText
+                android:id="@+id/etcomunidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtcomunidad"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:id="@+id/txtpais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etcomunidad"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="5dp"
+                android:text="@string/fragment_form_txt_pais" />
+            <EditText
+                android:id="@+id/etpais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtpais"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/txtcodigopostal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etpais"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="5dp"
+                android:text="@string/fragment_form_txt_codigopostal" />
+
+            <EditText
+                android:id="@+id/etcodigopostal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtcodigopostal"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:text="@string/guardarUbicacion"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</FrameLayout>

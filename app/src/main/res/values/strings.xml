@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MapsRecogerDirecciones</string>
+    <string name="title_activity_maps">MyMap</string>
+
+    <string name="guardarUbicacion">Guardar ubicacion</string>
+
+    <string name="fragment_form_txt_nombre">Nombre de la ubicación</string>
+    <string name="fragment_form_txt_direccion">Dirección</string>
+    <string name="fragment_form_txt_ciudad">Ciudad</string>
+    <string name="fragment_form_txt_comunidad">Comunidad</string>
+    <string name="fragment_form_txt_codigopostal">Codigo Postal</string>
+    <string name="fragment_form_txt_pais">Pais</string>
+    <string name="fragment_form_et_nombre">Introduce el nombre de la ubicación</string>
+
+</resources>
